@@ -17,7 +17,7 @@ React 19, Vite, Tailwind CSS 4, React Router
 ## Getting started
 
 ```bash
-git clone https://github.com/EntisarOsiami/Skill-Overview.git
+git clone https://github.com/intisar-alosaimi/Skill-Overview.git
 cd Skill-Overview
 npm install
 npm run dev
