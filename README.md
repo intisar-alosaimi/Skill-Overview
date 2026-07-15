@@ -1,21 +1,30 @@
-# Regarding the NOT-found issue in the render link
-The link shared is wrong to get to the website working use this link:
-https://skill-overview.onrender.com/
+# Skill Overview
 
-Thank you for your understanding.
-The problem was the shared link was : https://skill-overview.onrender.com/aws . not the one pointing to the root of the website. 
+A React app comparing the four major cloud providers — AWS, Azure, Google Cloud, and Alibaba Cloud — and their strategic investments in Saudi Arabia's digital transformation under Vision 2030.
 
+**Live demo:** [skill-overview.onrender.com](https://skill-overview.onrender.com/) (hosted on Render's free tier, so the first load after a period of inactivity can take 30–60 seconds to wake up)
 
+## Features
 
-# React + Vite
+- Home page with a card grid linking out to each provider
+- A dedicated page per provider (AWS, Azure, GCP, Alibaba) with an Arabic-language overview of that provider's regional presence and investments
+- Client-side routing via React Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech stack
 
-Currently, two official plugins are available:
+React 19, Vite, Tailwind CSS 4, React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting started
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/EntisarOsiami/Skill-Overview.git
+cd Skill-Overview
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What I'd improve
+
+- Each provider page hardcodes its own near-identical content object — move these into a shared data file (or fetch from JSON) instead of duplicating the same card-rendering JSX four times
+- Add an English/Arabic language toggle — content is currently Arabic-only while the surrounding UI chrome is English
+- Add tests
